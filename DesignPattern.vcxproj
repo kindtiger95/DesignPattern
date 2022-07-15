@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{444EFD92-5C49-44E1-96D4-431114141236}</ProjectGuid>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BehavioralPatterns\CommandPattern\Command.cpp" />
+    <ClCompile Include="src\BehavioralPatterns\CORPattern\CORPattern.cpp" />
+    <ClCompile Include="src\BehavioralPatterns\MediatorPattern\MediatorPattern.cpp" />
+    <ClCompile Include="src\BehavioralPatterns\MementoPattern\MementoPattern.cpp" />
+    <ClCompile Include="src\BehavioralPatterns\ObserverPattern\ObserverPattern.cpp" />
+    <ClCompile Include="src\BehavioralPatterns\StatePattern\StatePattern.cpp" />
+    <ClCompile Include="src\BehavioralPatterns\StrategyPattern\StrategyPattern.cpp" />
+    <ClCompile Include="src\BehavioralPatterns\TemplateMethodPattern\TemplateMethodPattern.cpp" />
+    <ClCompile Include="src\BehavioralPatterns\VisitorPattern\VisitorPattern.cpp" />
+    <ClCompile Include="src\CreationalPatterns\AbstractFactoryPattern\AbstractFactoryPattern.cpp" />
+    <ClCompile Include="src\CreationalPatterns\BuilderPattern\BuilderPattern.cpp" />
+    <ClCompile Include="src\CreationalPatterns\FactoryMethodPattern\FactoryMethodPattern.cpp" />
+    <ClCompile Include="src\CreationalPatterns\PrototypePattern\PrototypePattern.cpp" />
+    <ClCompile Include="src\CreationalPatterns\SingletonPattern\RWLock.cpp" />
+    <ClCompile Include="src\CreationalPatterns\SingletonPattern\SingletonPattern.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\StructuralPatterns\AdapterPattern\AdapterPattern.cpp" />
+    <ClCompile Include="src\StructuralPatterns\BridgePattern\BridgePattern.cpp" />
+    <ClCompile Include="src\StructuralPatterns\CompositePattern\CompositePattern.cpp" />
+    <ClCompile Include="src\StructuralPatterns\DecoratorPattern\DecoratorPattern.cpp" />
+    <ClCompile Include="src\StructuralPatterns\FacadePattern\FacadePattern.cpp" />
+    <ClCompile Include="src\StructuralPatterns\FlyweightPattern\Flyweight.cpp" />
+    <ClCompile Include="src\StructuralPatterns\ProxyPattern\ProxyPattern.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BehavioralPatterns\CommandPattern\Command.h" />
+    <ClInclude Include="src\BehavioralPatterns\CommandPattern\CommandPatternTest.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\CORPattern\CORPattern.h" />
+    <ClInclude Include="src\BehavioralPatterns\CORPattern\CORPatternTest.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\IteratorPattern\IteratorPattern.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\IteratorPattern\IteratorPatternTest.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\MediatorPattern\MediatorPattern.h" />
+    <ClInclude Include="src\BehavioralPatterns\MediatorPattern\MediatorPatternTest.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\MementoPattern\MementoPattern.h" />
+    <ClInclude Include="src\BehavioralPatterns\MementoPattern\MementoPatternTest.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\ObserverPattern\ObserverPattern.h" />
+    <ClInclude Include="src\BehavioralPatterns\ObserverPattern\ObserverPatternTest.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\StatePattern\StatePattern.h" />
+    <ClInclude Include="src\BehavioralPatterns\StatePattern\StatePatternTest.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\StrategyPattern\StrategyPattern.h" />
+    <ClInclude Include="src\BehavioralPatterns\StrategyPattern\StrategyPatternTest.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\TemplateMethodPattern\TemplateMethodPattern.h" />
+    <ClInclude Include="src\BehavioralPatterns\TemplateMethodPattern\TemplateMethodPatternTest.hpp" />
+    <ClInclude Include="src\BehavioralPatterns\VisitorPattern\VisitorPattern.h" />
+    <ClInclude Include="src\BehavioralPatterns\VisitorPattern\VisitorPatternTest.hpp" />
+    <ClInclude Include="src\CreationalPatterns\AbstractFactoryPattern\AbstractFactoryPattern.h" />
+    <ClInclude Include="src\CreationalPatterns\AbstractFactoryPattern\AbstractFactoryPatternTest.hpp" />
+    <ClInclude Include="src\CreationalPatterns\BuilderPattern\BuilderPattern.h" />
+    <ClInclude Include="src\CreationalPatterns\BuilderPattern\BuilderPatternTest.hpp" />
+    <ClInclude Include="src\CreationalPatterns\FactoryMethodPattern\FactoryMethodPattern.h" />
+    <ClInclude Include="src\CreationalPatterns\FactoryMethodPattern\FactoryMethodPatternTest.hpp" />
+    <ClInclude Include="src\CreationalPatterns\PrototypePattern\PrototypePattern.h" />
+    <ClInclude Include="src\CreationalPatterns\PrototypePattern\PrototypePatternTest.hpp" />
+    <ClInclude Include="src\CreationalPatterns\SingletonPattern\RWLock.h" />
+    <ClInclude Include="src\CreationalPatterns\SingletonPattern\SingletonPattern.h" />
+    <ClInclude Include="src\CreationalPatterns\SingletonPattern\SingletonPatternTest.hpp" />
+    <ClInclude Include="src\StructuralPatterns\AdapterPattern\AdapterPattern.h" />
+    <ClInclude Include="src\StructuralPatterns\AdapterPattern\AdapterPatternTest.hpp" />
+    <ClInclude Include="src\StructuralPatterns\BridgePattern\BridgePattern.h" />
+    <ClInclude Include="src\StructuralPatterns\BridgePattern\BridgePatternTest.hpp" />
+    <ClInclude Include="src\StructuralPatterns\CompositePattern\CompositePattern.h" />
+    <ClInclude Include="src\StructuralPatterns\CompositePattern\CompositePatternTest.hpp" />
+    <ClInclude Include="src\StructuralPatterns\DecoratorPattern\DecoratorPattern.h" />
+    <ClInclude Include="src\StructuralPatterns\DecoratorPattern\DecoratorPatternTest.hpp" />
+    <ClInclude Include="src\StructuralPatterns\FacadePattern\FacadePattern.h" />
+    <ClInclude Include="src\StructuralPatterns\FacadePattern\FacadePatternTest.hpp" />
+    <ClInclude Include="src\StructuralPatterns\FlyweightPattern\Flyweight.h" />
+    <ClInclude Include="src\StructuralPatterns\FlyweightPattern\FlyweightPatternTest.hpp" />
+    <ClInclude Include="src\StructuralPatterns\ProxyPattern\ProxyPattern.h" />
+    <ClInclude Include="src\StructuralPatterns\ProxyPattern\ProxyPatternTest.hpp" />
+    <ClInclude Include="src\TestPatterns.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
